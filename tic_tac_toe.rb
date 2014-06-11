@@ -1,3 +1,6 @@
+# https://gist.github.com/cglee/b30124da1d5e71b4ffc5 tictactoe-procedural.rb
+# https://gist.github.com/LobeliaUshtar/f431494a571ab5172f29 my tic_tac_toe.rb
+
 def initialize_board
   b = {}
   (1..9).each { |position| b[position] = ' '}
