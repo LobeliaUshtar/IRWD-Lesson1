@@ -1,0 +1,45 @@
+1) What is the value of "a" after the below code is executed?
+      a = 1
+      b = a
+      b = 3
+  a will equal 1
+
+2) What's the difference between an Array and a Hash?
+  Array is an ordered list of objects organized by indices
+  Hash is a collection of objects organized with key-valued pairs
+  Order matters in arrays and they can only use integers as indices. In hashes, you can define any type of object as its keys and values.
+
+3) Every Ruby expression returns a value. Say what value is returned in the below expressions:
+      arr = [1, 2, 3, 3]
+      [1, 2, 3, 3].uniq
+      [1, 2, 3, 3].uniq!
+  arr = [1, 2, 3, 3]
+  [1, 2, 3]   # if was assigned to a variable, it would not have been mutated
+  [1, 2, 3]   # if was assigned to a variable, it would have been mutated
+
+4) What's the difference between the map and select methods for the Array class? Give an example of when you'd use one versus the other.
+  Map and select are both methods that iterate through an array. Both are similar in that they return a new array. However, they are used for different situations.
+  Map is used to iterate through an array of elements, returning a new array with values of the called block. This block applies a method to each of the elements, thus transforming the existing array. Select is used to iterate through an array of elements, returning a new array with values that returns true for the block of condition. 
+
+5) Say you wanted to create a Hash. How would you do so if you wanted the hash keys to be String objects instead of symbols?
+  hash = {'a' => 1, 'b' => 2, 'c' => 3}
+
+6) What is returned?
+      x = 1
+      x.odd? ? "no way!" : "yes, sir!"
+  "no way!"
+
+7) What is x?
+      x = 1
+      3.times do
+        x += 1
+      end
+      puts x
+  x = 4
+
+8) What is x?
+      3.times do
+        x += 1
+      end
+      puts x
+  x results in an error since it never began the loop with a local value of any sort
